@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<h1>Critters of the Wood</h1>
+<script>
+const animals = ['Eastern_gray_squirrel', 'Eastern_cottontail', 'Raccoon', 'White-tailed_deer', 'Red_fox', 'Striped_skunk', 'Long-tailed_weasel', 'Porcupine', 'Peromyscus', 'Eastern_chipmunk', 'Red_squirrel', 'Little_brown_bat', 'Big_brown_bat', 'Hairy-tailed_mole', 'House_mouse', 'Eastern_meadow_vole', 'Coyote', 'Southern_flying_squirrel', 'American_black_bear', 'Bobcat', 'American_robin', 'American_crow', 'Black-capped Chickadee', 'Mourning_dove', 'Downy_woodpecker', 'Yellow-bellied_sapsucker', 'House_sparrow', 'Turkey_vulture', 'Pileated_woodpecker', 'Northern_cardinal', 'Baltimore_oriole','American_goldfinch', 'Blue_jay', 'Ruffed_grouse', 'Eastern_whip-poor-will', 'Ruby-throated_hummingbird', 'Common_raven', 'Barred_owl', 'Red-tailed_hawk', 'Great_horned_owl', 'Mosquito', 'Cricket_(insect)', 'Cepaea_nemoralis', 'Millipede', 'Papilio_glaucus', 'Monarch_butterfly', 'Coccinellidae', 'Carpenter_ant', 'Yellowjacket', 'Bumblebee', 'Opiliones', 'Argiope_trifasciata', 'Emerald_ash_borer', 'Tick', 'Earwig', 'Phanogomphus_descriptus', 'Phyllophaga', 'Firefly', 'Dog-day_cicada', 'Luna_moth', 'Wood_frog', 'American_toad', 'Plains_garter_snake', 'Leopard Frog', 'Red-backed_salamander', 'Gray_treefrog', 'Painted_turtle', 'Graptemys', 'Milk_snake', 'Eastern_newt', 'Bigfoot'];
+const getAnimalCategory = () => {
+  let animalIndex = Math.random();
+  let category;
+if (animalIndex < 1 && animalIndex >= 0.95) {
+category = 0;
+} else if (animalIndex <0.95 && animalIndex>=0.9) {
+category =1;
+} else if (animalIndex <0.9 && animalIndex>=0.89) {
+category =2;
+} else if (animalIndex <0.89 && animalIndex>=0.88) {
+category =3;
+} else if (animalIndex <0.88 && animalIndex>=0.87) {
+category =4;
+} else if (animalIndex <0.87 && animalIndex>=0.86) {
+category =5;
+} else if (animalIndex <0.86 && animalIndex>=0.85) {
+category =6;
+} else if (animalIndex <0.85 && animalIndex>=0.84) {
+category =7;
+} else if (animalIndex <0.84 && animalIndex>=0.83) {
+category =8;
+} else if (animalIndex <0.83 && animalIndex>=0.82) {
+category =9;
+} else if (animalIndex <0.82 && animalIndex>=0.81) {
+category =10;
+} else if (animalIndex <0.81 && animalIndex>=0.8) {
+category =11;
+} else if (animalIndex <0.8 && animalIndex>=0.79) {
+category =12;
+} else if (animalIndex <0.79 && animalIndex>=0.78) {
+category =13;
+} else if (animalIndex <0.78 && animalIndex>=0.77) {
+category =14;
+} else if (animalIndex <0.77 && animalIndex>=0.76) {
+category =15;
+} else if (animalIndex <0.76 && animalIndex>=0.75) {
+category =16;
+} else if (animalIndex <0.75 && animalIndex>=0.745) {
+category =17;
+} else if (animalIndex <0.745 && animalIndex>=0.74) {
+category =18;
+} else if (animalIndex <0.74 && animalIndex>=0.735) {
+category =19;
+} else if (animalIndex <0.735 && animalIndex>=0.685) {
+category =20;
+} else if (animalIndex <0.685 && animalIndex>=0.635) {
+category =21;
+} else if (animalIndex <0.635 && animalIndex>=0.615) {
+category =22;
+} else if (animalIndex <0.615 && animalIndex>=0.605) {
+category =23;
+} else if (animalIndex <0.605 && animalIndex>=0.595) {
+category =24;
+} else if (animalIndex <0.595 && animalIndex>=0.585) {
+category =25;
+} else if (animalIndex <0.585 && animalIndex>=0.575) {
+category =26;
+} else if (animalIndex <0.575 && animalIndex>=0.565) {
+category =27;
+} else if (animalIndex <0.565 && animalIndex>=0.555) {
+category =28;
+} else if (animalIndex <0.555 && animalIndex>=0.545) {
+category =29;
+} else if (animalIndex <0.545 && animalIndex>=0.535) {
+category =30;
+} else if (animalIndex <0.535 && animalIndex>=0.525) {
+category =31;
+} else if (animalIndex <0.525 && animalIndex>=0.515) {
+category =32;
+} else if (animalIndex <0.515 && animalIndex>=0.505) {
+category =33;
+} else if (animalIndex <0.505 && animalIndex>=0.495) {
+category =34;
+} else if (animalIndex <0.495 && animalIndex>=0.485) {
+category =35;
+} else if (animalIndex <0.485 && animalIndex>=0.475) {
+category =36;
+} else if (animalIndex <0.475 && animalIndex>=0.47) {
+category =37;
+} else if (animalIndex <0.47 && animalIndex>=0.465) {
+category =38;
+} else if (animalIndex <0.465 && animalIndex>=0.46) {
+category =39;
+} else if (animalIndex <0.46 && animalIndex>=0.36) {
+category =40;
+} else if (animalIndex <0.36 && animalIndex>=0.31) {
+category =41;
+} else if (animalIndex <0.31 && animalIndex>=0.3) {
+category =42;
+} else if (animalIndex <0.3 && animalIndex>=0.29) {
+category =43;
+} else if (animalIndex <0.29 && animalIndex>=0.28) {
+category =44;
+} else if (animalIndex <0.28 && animalIndex>=0.27) {
+category =45;
+} else if (animalIndex <0.27 && animalIndex>=0.26) {
+category =46;
+} else if (animalIndex <0.26 && animalIndex>=0.25) {
+category =47;
+} else if (animalIndex <0.25 && animalIndex>=0.24) {
+category =48;
+} else if (animalIndex <0.24 && animalIndex>=0.23) {
+category =49;
+} else if (animalIndex <0.23 && animalIndex>=0.22) {
+category =50;
+} else if (animalIndex <0.22 && animalIndex>=0.21) {
+category =51;
+} else if (animalIndex <0.21 && animalIndex>=0.2) {
+category =52;
+} else if (animalIndex <0.2 && animalIndex>=0.19) {
+category =53;
+} else if (animalIndex <0.19 && animalIndex>=0.18) {
+category =54;
+} else if (animalIndex <0.18 && animalIndex>=0.17) {
+category =55;
+} else if (animalIndex <0.17 && animalIndex>=0.16) {
+category =56;
+} else if (animalIndex <0.16 && animalIndex>=0.15) {
+category =57;
+} else if (animalIndex <0.15 && animalIndex>=0.145) {
+category =58;
+} else if (animalIndex <0.145 && animalIndex>=0.14) {
+category =59;
+} else if (animalIndex <0.14 && animalIndex>=0.09) {
+category =60;
+} else if (animalIndex <0.09 && animalIndex>=0.07) {
+category =61;
+} else if (animalIndex <0.07 && animalIndex>=0.06) {
+category =62;
+} else if (animalIndex <0.06 && animalIndex>=0.05) {
+category =63;
+} else if (animalIndex <0.05 && animalIndex>=0.04) {
+category =64;
+} else if (animalIndex <0.04 && animalIndex>=0.03) {
+category =65;
+} else if (animalIndex <0.03 && animalIndex>=0.02) {
+category =66;
+} else if (animalIndex <0.02 && animalIndex>=0.01) {
+category =67;
+} else if (animalIndex <0.01 && animalIndex>=0.005) {
+category =68;
+} else if (animalIndex <0.005 && animalIndex>=0.0001) {
+category =69;
+} else {   
+category = 70;
+}
+  return category;
+};
+
+location = `https://en.wikipedia.org/wiki/${animals[getAnimalCategory()]}`;
+</script>
+
+</body>
+</html>
